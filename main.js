@@ -88,7 +88,7 @@ function showWeather(response) {
   );
   tempElement.innerHTML = Math.round(response.data.main.temp);
   humidityElement.innerHTML = `${response.data.main.humidity}%`;
-  windElement.innerHTML = `${Math.round(response.data.wind.speed)} km/h`;
+  windElement.innerHTML = `${Math.round(response.data.wind.speed)}`;
 
   getForecast(response.data.coord);
 }
